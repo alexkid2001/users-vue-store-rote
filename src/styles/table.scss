@@ -1,0 +1,38 @@
+.table {
+  width: 100%;
+  border-collapse: collapse;
+
+  td{
+    text-align: left;
+    padding: 10px 15px;
+    border: 1px solid grey;
+
+    &:first-child {
+      width: 30px;
+      text-align: center;
+    }
+  }
+
+  thead {
+
+    td {
+      background-color: #e7e7e7;
+      color: black;
+      font-weight: 500;
+    }
+  }
+
+  tbody {
+
+    tr {
+      cursor: pointer;
+
+      &:hover {
+
+        td {
+          background-color: rgba(grey, .1);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+.breadcrumb {
+  padding-top: 10px;
+  padding-bottom: 50px;
+
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    position: relative;
+
+    &:nth-child(n+2) {
+      padding-left: 30px;
+
+      &:before {
+        content: '\00BB';
+        color: grey;
+        position: absolute;
+        left: 10px;
+        top: 0;
+      }
+    }
+
+    &.linked {
+      font-weight: 500;
+      color: blue;
+      cursor: pointer;
+    }
+  }
+}

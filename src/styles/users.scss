@@ -1,0 +1,59 @@
+.users {
+
+  &__header {
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 30px;
+  }
+
+  &__search-input {
+    margin-left: auto;
+
+    span {
+      font-weight: 500;
+      margin-right: 20px;
+    }
+
+    input {
+      height: 36px;
+      font-size: 20px;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+
+  &__footer {
+    margin-top: 20px;
+    display: flex;
+    align-items: cender;
+    justify-content: center;
+    position: relative;
+
+    .pagination {
+      margin-left: auto;
+      // margin-right: auto;
+    }
+  }
+
+  &__perpage {
+    height: 36px;
+    width: 50px;
+    font-size: 14px;
+    font-weight: 500;
+    margin-left: auto;
+  }
+
+  @media screen and (max-width: 639px) {
+
+    &__header {
+      flex-direction: column;
+      align-items: center;
+      
+      .users__search-input {
+        margin-top: 10px;
+        margin-left: 0;
+      }
+    }
+  }
+}
