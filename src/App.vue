@@ -8,18 +8,9 @@
 </template>
 <script>
 import Breadcrumb from './components/Breadcrumb'
-import { mapActions } from 'vuex';
 export default {
   components: {
     Breadcrumb,
-  },
-  methods: {
-    ...mapActions([
-      'GET_USERS'
-    ]),
-  }, 
-  mounted() {
-    this.GET_USERS()
   }
 }
 </script>
